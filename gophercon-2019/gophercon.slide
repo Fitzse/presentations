@@ -1,0 +1,53 @@
+GopherCon 2019
+San Diego July 24th - July 27th
+19 Sep 2019
+
+Sean Fitzgerald
+Senior Developer, ActiveState Software
+@Fitzse
+
+* Go 2
+- Modules
+- Error Handling
+- Generics
+- Official Language Server
+.link https://youtu.be/kNHo788oO5Y Rus Cox - On The Path To Go 2
+
+* Modules
+- Projects independent of `GOPATH`
+- Go 1.13 uses `proxy.golang.org` by default
+.link https://github.com/golang/go/wiki/Modules Golang Wiki
+.link https://proxy.golang.org/
+.link https://youtu.be/KqTySYYhPUE Katie Hockman - Go Module Proxy: Life of a Query
+.link https://youtu.be/WDbbIS7m9bU Aaron Schlesinger - The Athens Project
+
+* Error Handling
+- One of the major focusses for Go 2 designs
+.link https://go.googlesource.com/proposal/+/master/design/go2draft-error-handling-overview.md Error Handling Overview
+.link https://go.googlesource.com/proposal/+/master/design/go2draft-error-values-overview.md Error Values Overview
+.link https://github.com/golang/go/issues/32437 Rejected Try Proposal
+
+* Generics
+.link https://go.googlesource.com/proposal/+/master/design/go2draft-contracts.md Draft Design
+.link https://youtu.be/WzgLqE-3IhY Ian Lance Taylor - Generics in Go
+
+* Official Language Server
+- Replacement for the myriad of individual editor tools
+- `gopls` "go please" 
+.link https://github.com/golang/tools/tree/master/gopls
+.link https://youtu.be/EFJfdWzBHwE Rebecca Stambler - Go, pls stop breaking my editor
+
+* Talks
+.link https://www.youtube.com/watch?v=WaD8sNqroAw&list=PL2ntRZ1ySWBdDyspRTNBIKES1Y-P__59_ YouTube Playlist
+
+* Favourite Talks
+.link https://youtu.be/eMz0vni6PAw Carolyn Van Slyck - Design Command-Line Tools People Love
+.link https://youtu.be/nok0aYiGiYA Dave Cheney - Two Go Programs, Three Different Profiling Techniques
+.link https://youtu.be/oE_vm7KeV_E Daniel Marti - Optimizing Go Code Without a Blindfold
+.link https://youtu.be/cQgpNkKi9aA Oliver Stenbom - Contributing to the os Package: How Deep Do You Go?
+.link https://youtu.be/EiB9ZVrvrz0 Ron Evans - Small is Going Big: Go on Microcontrollers
+
+* Community
+.link https://youtu.be/_Pc0bzz4-gM Johnny Boursiquot - What Got Us Here, Won't Get Us There
+.link https://github.com/gobridge/about-us/blob/master/README.md GoBridge
+.link https://gophers.slack.com #gophers Slack
