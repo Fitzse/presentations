@@ -1,0 +1,61 @@
+Go Lessons Learned
+10 Nov 2019
+
+Sean Fitzgerald
+Senior Developer, ActiveState Software
+@Fitzse
+
+* Idiomatic Go
+
+- Effective Go
+.link https://golang.org/doc/effective_go.html
+
+- Common Code Review Comments
+.link https://github.com/golang/go/wiki/CodeReviewComments
+
+- Uber Style Guide
+.link https://github.com/uber-go/guide/blob/master/style.md
+
+* "Enums"
+- Go does not have enums
+- Use constants to mimic the behaviour of enums
+- Generate conversion methods
+.link https://github.com/alvaroloes/enumer
+.code enums.go
+
+* Maps
+- Have no defined iteration order
+.code map_iteration.go
+
+    Key: a Value: 1         Key: a Value: 1         Key: b Value 7
+    Key: b Value: 7         Key: c Value: 3         Key: a Value 1
+    Key: c Value: 3         Key: b Value: 7         Key: c Value 3
+
+* Maps
+Initialize the size of the map if it is known
+.code map_unsized.go
+Instead of
+.code map_size.go
+
+* Optimizing Performance
+- The `pprof` tool
+.link https://golang.org/pkg/net/http/pprof
+- Benchmark tests
+.link https://golang.org/pkg/testing/#hdr-Benchmarks
+- GopherCon 2019: Dave Cheney
+.link https://www.youtube.com/watch?v=nok0aYiGiYA
+
+* Interfaces
+- Avoid `interface{}` as much as possible
+- Define interfaces where they are used
+- Accept interfaces, return structs
+
+* Interfaces
+.code bad_interface.go
+
+* Interfaces
+.code concrete_type.go
+.code good_interface.go
+
+* GitHub
+.link https://github.com/Fitzse/presentations/tree/master/lessons-learned
