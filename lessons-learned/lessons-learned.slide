@@ -1,8 +1,8 @@
 Go Lessons Learned
-10 Nov 2019
+16 Jan 2020
 
 Sean Fitzgerald
-Senior Developer, ActiveState Software
+Senior Developer, HashiCorp
 @Fitzse
 
 * Idiomatic Go
@@ -23,8 +23,13 @@ Senior Developer, ActiveState Software
 .link https://github.com/alvaroloes/enumer
 .code enums.go
 
+* Use Go Generate
+- Place a comment somewhere in the file
+- Executing go generate will execute the command
+.code example/gen/enum.go
+
 * Maps
-- Have no defined iteration order
+Have no defined iteration order
 .code map_iteration.go
 
     Key: a Value: 1         Key: a Value: 1         Key: b Value 7
@@ -33,9 +38,9 @@ Senior Developer, ActiveState Software
 
 * Maps
 Initialize the size of the map if it is known
-.code map_unsized.go
-Instead of
 .code map_size.go
+Instead of
+.code map_unsized.go
 
 * Optimizing Performance
 - The `pprof` tool
@@ -46,16 +51,18 @@ Instead of
 .link https://www.youtube.com/watch?v=nok0aYiGiYA
 
 * Interfaces
+- Are an abstraction of behaviour
 - Avoid `interface{}` as much as possible
 - Define interfaces where they are used
 - Accept interfaces, return structs
 
-* Interfaces
+* Don't Do This
 .code bad_interface.go
 
-* Interfaces
+* Do This
 .code concrete_type.go
 .code good_interface.go
 
-* GitHub
-.link https://github.com/Fitzse/presentations/tree/master/lessons-learned
+* Handle Errors
+- Errors are not exceptional
+- Being explicit with how you handle errors is how we write reliable software

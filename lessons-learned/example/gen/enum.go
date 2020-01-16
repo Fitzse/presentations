@@ -1,4 +1,5 @@
-package animals
+//go:generate enumer -type=Animal -json -sql
+package enum
 
 type Animal int
 
